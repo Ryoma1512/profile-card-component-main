@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    /* background-position: right 51vh bottom 20vh, left 45vh top 50vh; */
+    background-position: right 25vh bottom 30vh, left 25vh top 30vh;
+}
+
+.card-container{
+    margin: 170px auto;
+    width: 330px;
+    width: 90%;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.top-box{
+     background-image: url(../images/bg-pattern-card.svg);
+     height: 140px;
+}
+
+.photo{
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+
+}
+/* PERSONAL INFORMATION */
+.personal-info{
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+.name{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.age,
+.city{
+    color: hsl(0, 0%, 59%);
+}
+
+.city{
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.stats-info ul{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    flex-wrap: wrap;
+}
+
+.info-items{
+    background-color: white;
+    list-style: none;
+    height: 90px;
+    letter-spacing: 1px;
+
+}
+
+.info-items h1{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info-items h2{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 5px;
+    text-transform:capitalize;
+}
+
+.attribution{
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width:376px){
+    body{
+        background-position: right 90vh bottom 45vh, left 90vh top 60vh;
+
+    }
+    .card-container{
+        width: 350px;
+        /* width: 100%; */
+    }
+
+}
